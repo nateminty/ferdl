@@ -3893,7 +3893,7 @@ var players = [{
                         <div class='col'>
                             <div style='margin-left:50% auto'>
                             <img src='${player['img_link']}' style='display:inline;'>
-                            <img src='/club_icons/${player['club'].toLowerCase().replace(/\s/g, '')}.png' style='display:inline'>
+                            <img src='/ferdl/club_icons/${player['club'].toLowerCase().replace(/\s/g, '')}.png' style='display:inline'>
                             </div>
                         </div>
                         <div class='col'></div>
@@ -4160,7 +4160,7 @@ var players = [{
                         $("#entered-name-" + currentIndex).css("font-size","16px");
                     }
                     $("#entered-name-" + currentIndex).css("user-select", "none");
-                    $("#cl-" + currentIndex + " .icon-holder").html(`<img class='club-icon' src='/club_icons/${p['club'].toLowerCase().replace(/\s/g, '')}.png'>`);
+                    $("#cl-" + currentIndex + " .icon-holder").html(`<img class='club-icon' src='/ferdl/club_icons/${p['club'].toLowerCase().replace(/\s/g, '')}.png'>`);
                     $("#cl-" + currentIndex + " .info-holder").html("<h6 class='club-header'>" + p['club'] + "</h6>");
                     
                     $("#cl-" + currentIndex + " .info-holder .club-header").css("font-size","16px");
@@ -4206,7 +4206,7 @@ var players = [{
                             <div class='col'>
                                 <div style='margin-left:50% auto'>
                                 <img src='${player['img_link']}' style='display:inline;'>
-                                <img src='/club_icons/${player['club'].toLowerCase().replace(/\s/g, '')}.png' style='display:inline'>
+                                <img src='/ferdl/club_icons/${player['club'].toLowerCase().replace(/\s/g, '')}.png' style='display:inline'>
                                 </div>
                             </div>
                             <div class='col'></div>
