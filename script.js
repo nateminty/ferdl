@@ -3852,7 +3852,7 @@ var players = [{
     })
 
     $.ajax({
-        url: "mystery_player.json",
+        url: "/ferdl/mystery_player.json",
         type: "GET",
         async: false,
         dataType: "json",
