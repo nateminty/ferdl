@@ -3842,7 +3842,7 @@ var players = [{
     }
 
     $.ajax({
-        url: "epl_table.json",
+        url: "/ferdl/epl_table.json",
         type: "GET",
         dataType: "json",
         success: function(e) {
