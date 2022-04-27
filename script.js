@@ -3951,29 +3951,29 @@ var players = [{
                 // console.log("mp:" + mp_index);
                 // console.log("sp_index: " + sp_index);
 
-                // if(mp_index > sp_index) {
-                //     $("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/rarrow.png'></div>");
-                // }
-                // else if(mp_index < sp_index) {
-                //     $("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/downgreenarrow.png'></div>");
-                // }
-               if(player['club'].substring(0,1) < p['club'].substring(0,1)) {
-                    //$("#cl-" + currentIndex).css("background-color","#85cdfa");
-                    $("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/uparrow.png'></div>");
-                }
-                else if(player['club'].substring(0,1) > p['club'].substring(0,1)) {
-                    //$("#cl-" + currentIndex).css("background-color","#f57a49");
+                if(mp_index > sp_index) {
                     $("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/downarrow.png'></div>");
                 }
-                else {
-                    // if(player['club'].substring(1,2) < p['club'].substring(1,2)) {
-                    // $("#cl-" + currentIndex).css("background-color","#85cdfa");
-                    // //$("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/downgreenarrow.png'></div>");
-                    // }
-                    // else if(player['club'].substring(1,2) > p['club'].substring(1,2)) {
-                    // $("#cl-" + currentIndex).css("background-color","#f57a49");
-                    // }
-                    $("#cl-" + currentIndex).css("background-color","#eeee35");
+                else if(mp_index < sp_index) {
+                    $("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/uparrow.png'></div>");
+                }
+//                if(player['club'].substring(0,1) < p['club'].substring(0,1)) {
+//                     //$("#cl-" + currentIndex).css("background-color","#85cdfa");
+//                     $("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/uparrow.png'></div>");
+//                 }
+//                 else if(player['club'].substring(0,1) > p['club'].substring(0,1)) {
+//                     //$("#cl-" + currentIndex).css("background-color","#f57a49");
+//                     $("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/downarrow.png'></div>");
+//                 }
+//                 else {
+//                     // if(player['club'].substring(1,2) < p['club'].substring(1,2)) {
+//                     // $("#cl-" + currentIndex).css("background-color","#85cdfa");
+//                     // //$("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/downgreenarrow.png'></div>");
+//                     // }
+//                     // else if(player['club'].substring(1,2) > p['club'].substring(1,2)) {
+//                     // $("#cl-" + currentIndex).css("background-color","#f57a49");
+//                     // }
+//                     $("#cl-" + currentIndex).css("background-color","#eeee35");
                 }
             }
 
