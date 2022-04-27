@@ -3974,7 +3974,7 @@ var players = [{
 //                     // $("#cl-" + currentIndex).css("background-color","#f57a49");
 //                     // }
 //                     $("#cl-" + currentIndex).css("background-color","#eeee35");
-                }
+                //}
             }
 
             //Check position (win condition not working)
