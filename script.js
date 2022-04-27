@@ -3852,7 +3852,7 @@ var players = [{
     })
 
     $.ajax({
-        url: "mystery_player.json",
+        url: "https://github.com/nateminty/ferdl/blob/12ae0a078e360d3eb7db92909871ca055cb05634/mystery_player.json",
         type: "GET",
         async: false,
         dataType: "json",
