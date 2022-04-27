@@ -3919,11 +3919,11 @@ var players = [{
                 if(parseInt($("#kn-" + currentIndex + " h3").text()) > player['kit_num']) {
                     //$("#kn-" + currentIndex).css("background-color","#f57a49");
                     //$("#kn-" + currentIndex).css("background-color","#85cdfa");
-                    $("#kn-" + currentIndex).html($("#kn-" + currentIndex).html() + "<div><img class='img-icon' src='/downarrow.png'></div>");
+                    $("#kn-" + currentIndex).html($("#kn-" + currentIndex).html() + "<div><img class='img-icon' src='/ferdl/downarrow.png'></div>");
                 }
                 else {
                     //$("#kn-" + currentIndex).css("background-color","#85cdfa");
-                    $("#kn-" + currentIndex).html($("#kn-" + currentIndex).html() + "<div><img class='img-icon' src='/uparrow.png'></div>");
+                    $("#kn-" + currentIndex).html($("#kn-" + currentIndex).html() + "<div><img class='img-icon' src='/ferdl/uparrow.png'></div>");
                 }
             }
 
@@ -3952,10 +3952,10 @@ var players = [{
                 // console.log("sp_index: " + sp_index);
 
                 if(mp_index > sp_index) {
-                    $("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/downarrow.png'></div>");
+                    $("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/ferdl/downarrow.png'></div>");
                 }
                 else if(mp_index < sp_index) {
-                    $("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/uparrow.png'></div>");
+                    $("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/ferdl/uparrow.png'></div>");
                 }
 //                if(player['club'].substring(0,1) < p['club'].substring(0,1)) {
 //                     //$("#cl-" + currentIndex).css("background-color","#85cdfa");
@@ -3986,30 +3986,30 @@ var players = [{
             else {
                 if($("#po-" + currentIndex).text() == "Goalkeeper") {
                     //$("#po-" + currentIndex).css("background-color","#85cdfa");
-                    $("#po-" + currentIndex).html($("#po-" + currentIndex).html() + "<div><img class='img-icon' src='/uparrow.png'></div>");
+                    $("#po-" + currentIndex).html($("#po-" + currentIndex).html() + "<div><img class='img-icon' src='/ferdl/uparrow.png'></div>");
                 }
                 else if($("#po-" + currentIndex).text() == "Forward") {
                     //$("#po-" + currentIndex).css("background-color","#f57a49");
-                    $("#po-" + currentIndex).html($("#po-" + currentIndex).html() + "<div><img class='img-icon' src='/downarrow.png'></div>");
+                    $("#po-" + currentIndex).html($("#po-" + currentIndex).html() + "<div><img class='img-icon' src='/ferdl/downarrow.png'></div>");
                 }
                 else if($("#po-" + currentIndex).text() == "Midfielder") {
                     if(player['position']=="Defender" || player['position']=="Goalkeeper") {
                         //$("#po-" + currentIndex).css("background-color","#f57a49");
-                        $("#po-" + currentIndex).html($("#po-" + currentIndex).html() + "<div><img class='img-icon' src='/downarrow.png'></div>");
+                        $("#po-" + currentIndex).html($("#po-" + currentIndex).html() + "<div><img class='img-icon' src='/ferdl/downarrow.png'></div>");
                     }
                     else {
                         //$("#po-" + currentIndex).css("background-color","#85cdfa");
-                        $("#po-" + currentIndex).html($("#po-" + currentIndex).html() + "<div><img class='img-icon' src='/uparrow.png'></div>");
+                        $("#po-" + currentIndex).html($("#po-" + currentIndex).html() + "<div><img class='img-icon' src='/ferdl/uparrow.png'></div>");
                     }
                 }
                 else if($("#po-" + currentIndex).text() == "Defender") {
                     if(player['position']=="Forward" || player['position']=="Midfielder") {
                         //$("#po-" + currentIndex).css("background-color","#85cdfa");
-                        $("#po-" + currentIndex).html($("#po-" + currentIndex).html() + "<div><img class='img-icon' src='/uparrow.png'></div>");
+                        $("#po-" + currentIndex).html($("#po-" + currentIndex).html() + "<div><img class='img-icon' src='/ferdl/uparrow.png'></div>");
                     }
                     else {
                         //$("#po-" + currentIndex).css("background-color","#f57a49");
-                        $("#po-" + currentIndex).html($("#po-" + currentIndex).html() + "<div><img class='img-icon' src='/downarrow.png'></div>");
+                        $("#po-" + currentIndex).html($("#po-" + currentIndex).html() + "<div><img class='img-icon' src='/ferdl/downarrow.png'></div>");
                     }
                 }
             }
@@ -4023,11 +4023,11 @@ var players = [{
             else {
                 if($("#ag-" + currentIndex).text() > player['age']) {
                     //$("#ag-" + currentIndex).css("background-color","#f57a49");
-                    $("#ag-" + currentIndex).html($("#ag-" + currentIndex).html() + "<div><img class='img-icon' src='/downarrow.png'></div>")
+                    $("#ag-" + currentIndex).html($("#ag-" + currentIndex).html() + "<div><img class='img-icon' src='/ferdl/downarrow.png'></div>")
                 }
                 else {
                     //$("#ag-" + currentIndex).css("background-color","#85cdfa");
-                    $("#ag-" + currentIndex).html($("#ag-" + currentIndex).html() + "<div><img class='img-icon' src='/uparrow.png'></div>")
+                    $("#ag-" + currentIndex).html($("#ag-" + currentIndex).html() + "<div><img class='img-icon' src='/ferdl/uparrow.png'></div>")
                 }
             }
 
@@ -4040,15 +4040,15 @@ var players = [{
             else {
                 if(player['nation'].substring(0,1) > $("#na-" + currentIndex).text().substring(0,1)) {
                     //$("#na-" + currentIndex).css("background-color","#f57a49");
-                    $("#na-" + currentIndex).html($("#na-" + currentIndex).html() + "<div><img class='img-icon' src='/downarrow.png'></div>");
+                    $("#na-" + currentIndex).html($("#na-" + currentIndex).html() + "<div><img class='img-icon' src='/ferdl/downarrow.png'></div>");
                 }
                 else if(player['nation'].substring(0,1) < $("#na-" + currentIndex).text().substring(0,1)) {
                     //$("#na-" + currentIndex).css("background-color","#85cdfa");
-                    $("#na-" + currentIndex).html($("#na-" + currentIndex).html() + "<div><img class='img-icon' src='/uparrow.png'></div>");
+                    $("#na-" + currentIndex).html($("#na-" + currentIndex).html() + "<div><img class='img-icon' src='/ferdl/uparrow.png'></div>");
                 }
                 else {
                     //$("#na-" + currentIndex).css("background-color","#eeee35");
-                    $("#na-" + currentIndex).html($("#na-" + currentIndex).html() + "<div><img style='height:50px;width:150px;' src='/equalsign.png'></div>");
+                    $("#na-" + currentIndex).html($("#na-" + currentIndex).html() + "<div><img style='height:50px;width:150px;' src='/ferdl/equalsign.png'></div>");
                 }
             }
         }
