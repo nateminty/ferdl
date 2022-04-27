@@ -3864,17 +3864,17 @@ var players = [{
         }
     })
 
-    $.ajax({
-        url: "/ferdl/mystery_player.json",
-        type: "GET",
-        async: false,
-        dataType: "json",
-        success: function(e) {
-            player = e;
-        }
-    });
+//     $.ajax({
+//         url: "/ferdl/mystery_player.json",
+//         type: "GET",
+//         async: false,
+//         dataType: "json",
+//         success: function(e) {
+//             player = e;
+//         }
+//     });
     
-    //var player = players[Math.floor(Math.random() * players.length)];
+    var player = players[Math.floor(Math.random() * players.length)];
     console.log(player)
     
     $("#hint-link").click(function() {
