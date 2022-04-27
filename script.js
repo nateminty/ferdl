@@ -3846,7 +3846,7 @@ var players = [{
         type: "GET",
         dataType: "json",
         success: function(e) {
-            pl_table = e.clubs;
+            pl_table = e[0]['clubs'];
             console.log(pl_table)
         }
     })
