@@ -3847,6 +3847,19 @@ var players = [{
         dataType: "json",
         success: function(e) {
             pl_table = e[0]['clubs'];
+            
+            for(let i = 0; i < pl_table.length; i++) {
+                if(pl_table[i] == "Manchester City") {
+                    pl_table[i] == "Man City";
+                }
+                else if(pl_table[i] == "Manchester United") {
+                    pl_table[i] == "Man United";
+                }
+                else if(pl_table[i] == "Tottenham") {
+                    pl_table[i] == "Spurs";
+                }
+            }
+            
             console.log(pl_table)
         }
     })
