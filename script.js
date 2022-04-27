@@ -3842,7 +3842,7 @@ var players = [{
     }
 
     $.ajax({
-        url: "/epl_table.json",
+        url: "epl_table.json",
         type: "GET",
         dataType: "json",
         success: function(e) {
@@ -3852,7 +3852,7 @@ var players = [{
     })
 
     $.ajax({
-        url: "/mystery_player.json",
+        url: "mystery_player.json",
         type: "GET",
         async: false,
         dataType: "json",
