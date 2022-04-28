@@ -3947,47 +3947,47 @@ var players = [{
                 //$("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/checkmark.png'></div>");
             }
             else {
-                let mp_index = -1;
-                let sp_index = -1;
-                // console.log("player club: " + player.club);
-                // console.log("p club: " + p.club);
-                for(let i = 0; i < pl_table.length; i++) {
-                   // console.log(pl_table_2[i].team.name);
-                    if(player['club'] == pl_table[i]) {
-                        mp_index = i;
-                    }
-                    if(p['club'] == pl_table[i]) {
-                        sp_index = i;
-                    }
-                }
+//                 let mp_index = -1;
+//                 let sp_index = -1;
+//                 // console.log("player club: " + player.club);
+//                 // console.log("p club: " + p.club);
+//                 for(let i = 0; i < pl_table.length; i++) {
+//                    // console.log(pl_table_2[i].team.name);
+//                     if(player['club'] == pl_table[i]) {
+//                         mp_index = i;
+//                     }
+//                     if(p['club'] == pl_table[i]) {
+//                         sp_index = i;
+//                     }
+//                 }
 
-                // console.log("mp:" + mp_index);
-                // console.log("sp_index: " + sp_index);
+//                 // console.log("mp:" + mp_index);
+//                 // console.log("sp_index: " + sp_index);
 
-                if(mp_index > sp_index) {
-                    $("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/ferdl/downarrow.png'></div>");
-                }
-                else if(mp_index < sp_index) {
+//                 if(mp_index > sp_index) {
+//                     $("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/ferdl/downarrow.png'></div>");
+//                 }
+//                 else if(mp_index < sp_index) {
+//                     $("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/ferdl/uparrow.png'></div>");
+//                 }
+               if(player['club'].substring(0,1) < p['club'].substring(0,1)) {
+                    //$("#cl-" + currentIndex).css("background-color","#85cdfa");
                     $("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/ferdl/uparrow.png'></div>");
                 }
-//                if(player['club'].substring(0,1) < p['club'].substring(0,1)) {
-//                     //$("#cl-" + currentIndex).css("background-color","#85cdfa");
-//                     $("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/uparrow.png'></div>");
-//                 }
-//                 else if(player['club'].substring(0,1) > p['club'].substring(0,1)) {
-//                     //$("#cl-" + currentIndex).css("background-color","#f57a49");
-//                     $("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/downarrow.png'></div>");
-//                 }
-//                 else {
-//                     // if(player['club'].substring(1,2) < p['club'].substring(1,2)) {
-//                     // $("#cl-" + currentIndex).css("background-color","#85cdfa");
-//                     // //$("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/downgreenarrow.png'></div>");
-//                     // }
-//                     // else if(player['club'].substring(1,2) > p['club'].substring(1,2)) {
-//                     // $("#cl-" + currentIndex).css("background-color","#f57a49");
-//                     // }
-//                     $("#cl-" + currentIndex).css("background-color","#eeee35");
-                //}
+                else if(player['club'].substring(0,1) > p['club'].substring(0,1)) {
+                    //$("#cl-" + currentIndex).css("background-color","#f57a49");
+                    $("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/ferdl/downarrow.png'></div>");
+                }
+                else {
+                    // if(player['club'].substring(1,2) < p['club'].substring(1,2)) {
+                    // $("#cl-" + currentIndex).css("background-color","#85cdfa");
+                    // //$("#cl-" + currentIndex).html($("#cl-" + currentIndex).html() + "<div><img class='img-icon' src='/downgreenarrow.png'></div>");
+                    // }
+                    // else if(player['club'].substring(1,2) > p['club'].substring(1,2)) {
+                    // $("#cl-" + currentIndex).css("background-color","#f57a49");
+                    // }
+                    $("#cl-" + currentIndex).css("background-color","#eeee35");
+                }
             }
 
             //Check position (win condition not working)
@@ -4060,8 +4060,8 @@ var players = [{
                     $("#na-" + currentIndex).html($("#na-" + currentIndex).html() + "<div><img class='img-icon' src='/ferdl/uparrow.png'></div>");
                 }
                 else {
-                    //$("#na-" + currentIndex).css("background-color","#eeee35");
-                    $("#na-" + currentIndex).html($("#na-" + currentIndex).html() + "<div><img style='height:50px;width:150px;' src='/ferdl/equalsign.png'></div>");
+                    $("#na-" + currentIndex).css("background-color","#eeee35");
+                    //$("#na-" + currentIndex).html($("#na-" + currentIndex).html() + "<div><img style='height:50px;width:150px;' src='/ferdl/equalsign.png'></div>");
                 }
             }
         }
