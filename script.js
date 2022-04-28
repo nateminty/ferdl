@@ -3987,6 +3987,7 @@ var players = [{
                     // $("#cl-" + currentIndex).css("background-color","#f57a49");
                     // }
                     $("#cl-" + currentIndex).css("background-color","#eeee35");
+                    $("#cl-" + currentIndex + " h3").css("margin-top","1em");
                 }
             }
 
@@ -4061,6 +4062,7 @@ var players = [{
                 }
                 else {
                     $("#na-" + currentIndex).css("background-color","#eeee35");
+                    $("#na-" + currentIndex + " h3").css("margin-top","1em");
                     //$("#na-" + currentIndex).html($("#na-" + currentIndex).html() + "<div><img style='height:50px;width:150px;' src='/ferdl/equalsign.png'></div>");
                 }
             }
